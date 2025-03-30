@@ -28,18 +28,26 @@ Beberapa model diuji untuk mengklasifikasikan pelanggan berdasarkan cluster yang
 ```
 > Akurasi sebelum tuning: 99.13%
 > Akurasi setelah tuning: 98.91%
-> Memiliki precision dan recall yang tinggi.
+> Precision kelas 0 turun dari 99% ke 98%, tetapi recall kelas 0 meningkat dari 99% ke 100%.
+> Precision kelas 1 naik dari 99% ke 100%, tetapi recall kelas 1 turun dari 98% ke 96%.
 > Perbedaan akurasi training-testing berkurang dari 0.54% menjadi 0.06%, menunjukkan peningkatan generalisasi.
 ```
 
 ### 🔹 Decision Tree
 ```
-> Lebih rentan terhadap overfitting meskipun memiliki interpretabilitas tinggi.
+> Akurasi sebelum tuning: 98.91%
+> Akurasi setelah tuning: 98.91% (stabil).
+> Precision dan recall tetap stabil untuk kedua kelas (precision kelas 0: 99%, recall kelas 0: 99%, precision kelas 1: 98%, recall kelas 1: 99%).
+> Tuning tidak mengubah performa secara signifikan tetapi mempertahankan stabilitas model.
 ```
 
 ### 🔹 Logistic Regression
 ```
-> Efektif untuk data dengan pola linear tetapi kurang optimal dalam menangani kompleksitas pola transaksi.
+> Akurasi sebelum tuning: 98.48%
+> Akurasi setelah tuning: 98.70%
+> Precision kelas 0 tetap 99%, recall kelas 0 meningkat dari 98% ke 99%.
+> Precision kelas 1 tetap 97%, recall kelas 1 tetap stabil di 99%.
+> Tidak ada indikasi overfitting atau underfitting; model generalisasi dengan baik.
 ```
 
 
